@@ -9,5 +9,5 @@ router.get('/', function(req, res){
 });
 
 router.post('/login', adminCheck(), function(req, res){
-    res.render('admin');
+    res.render('adminList');
 })
