@@ -13,19 +13,26 @@ body {
     border: none;
 }
 
-.past {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.7rem;
+.card-body {
+    padding: 13px;
 }
 
-.past h5{
-    font-size: 1rem;
+.past {
+    color: rgba(255, 255, 255, 0.36);
 }
 
 .current {
-    background: linear-gradient(135deg, rgba(37, 37, 92, 0.3), rgba(255, 255, 255, 0));
+    border: .25em solid #fff;
 }
 
 .next {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.85);
+}
+.separator {
+    display: inline;
+    padding: 10px;
+}
+.separator:after {
+    content: " | ";
+    display: inline;
 }
