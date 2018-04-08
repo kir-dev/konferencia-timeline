@@ -5,7 +5,7 @@ mongoose.connect('mongodb://localhost/konferencia-timeline');
 var Schema = mongoose.Schema,
     ObjectId = Schema.ObjectId;
 
-var Question = new mongoose.Schema({
+var Event = new mongoose.Schema({
     _id: {
         type: ObjectId,
         default: function f() {
@@ -20,7 +20,7 @@ var Question = new mongoose.Schema({
     offset: Number,
 });
 
-mongoose.model('Question', Question);
+mongoose.model('Event', Event);
 
 var Admin = new mongoose.Schema({
     _id: {
