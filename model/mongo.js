@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/konferencia-timeline');
-
+mongoose.connection.on('connected', function () {  
+  console.log('Mongoose default connection open ');
+}); 
 var Schema = mongoose.Schema,
     ObjectId = Schema.ObjectId;
 
