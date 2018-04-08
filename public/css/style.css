@@ -3,3 +3,29 @@ body {
     font-family: Montserrat,sans-serif;
     color: white;
 }
+
+.place-title {
+    font-weight: 900;
+}
+
+.card {
+    background: none;
+    border: none;
+}
+
+.past {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+}
+
+.past h5{
+    font-size: 1rem;
+}
+
+.current {
+    background: linear-gradient(135deg, rgba(37, 37, 92, 0.3), rgba(255, 255, 255, 0));
+}
+
+.next {
+    color: rgba(255, 255, 255, 0.65);
+}
