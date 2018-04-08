@@ -19,7 +19,7 @@ var Event = new mongoose.Schema({
     presenter: String,
     startDate: Date,
     endDate: Date,
-    offset: Number,
+    description: String,
 });
 
 mongoose.model('Event', Event);
