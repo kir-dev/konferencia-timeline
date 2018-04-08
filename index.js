@@ -12,5 +12,6 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 
 app.get('/', (req, res) => res.render('index'));
+app.get('/admin', (req, res) => res.render('admin'));
 
 app.listen(3000, () => console.log('App listening on :' + 3000));
