@@ -1,9 +1,9 @@
 module.exports = function(req, res, next){
-    dal.Event.find({}, function(doc, err){
-        if(err)
+    dal.Event.find({}, function(err, doc){
+        if(err) {
             next(err);
-        req.events = doc;
-        return next();
+        }
+        res.events = doc;
+        next();
     });
-    return next();
-}
+};
