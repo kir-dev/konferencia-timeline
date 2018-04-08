@@ -3,3 +3,36 @@ body {
     font-family: Montserrat,sans-serif;
     color: white;
 }
+
+.place-title {
+    font-weight: 900;
+}
+
+.card {
+    background: none;
+    border: none;
+}
+
+.card-body {
+    padding: 13px;
+}
+
+.past {
+    color: rgba(255, 255, 255, 0.36);
+}
+
+.current {
+    border: .25em solid #fff;
+}
+
+.next {
+    color: rgba(255, 255, 255, 0.85);
+}
+.separator {
+    display: inline;
+    padding: 10px;
+}
+.separator:after {
+    content: " | ";
+    display: inline;
+}
