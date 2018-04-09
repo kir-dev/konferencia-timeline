@@ -133,44 +133,41 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <form class="form" method="POST" action="/admin/events">
             <div class="modal-body">
                 <div class="edit overlay-content">
-                    <form class="form" method="POST" action="/admin/events">
                         <input type="hidden" name="id" id="id">
                         <fieldset class="form-group">
                             <label for="name">Név:</label>
                             <input class="form-control" type="text" id="name" name="name">
                         </fieldset>
                         <div class="form-group">
-                            <label for="title">Cím:</label>
-                            <input class="form-control" type="text" id="title" name="title"><br>
+                            <label for="presenter">Előadó:</label>
+                            <input class="form-control" type="presenter" id="presenter" name="presenter">
                         </div>
                         <fieldset class="form-group">
                             <label for="startDate">Kezdés:</label>
-                            <input class="form-control" type="text" id="startDate" name="startDate"><br>
+                            <input class="form-control" type="text" id="startDate" name="startDate">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="endDate">Vége:</label>
-                            <input class="form-control" type="text" id="endDate" name="endDate"><br>
+                            <input class="form-control" type="text" id="endDate" name="endDate">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="place">Terem:</label>
-                            <input class="form-control" type="text" id="place" name="place"><br>
+                            <input class="form-control" type="text" id="place" name="place">
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="description">Leírás:</label>
                             <textarea class="form-control" type="text" id="description" name="description"></textarea>
                         </fieldset>
-
-                        <div class="form-group">
-                        </div>
-                    </form>
                 </div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-success">Mehet</button>
                 <button data-dismiss="modal" class="btn btn-danger">Mégse</button>
             </div>
+            </form>
         </div>
     </div>
 </div>

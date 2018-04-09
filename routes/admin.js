@@ -19,6 +19,11 @@ router.get('/events', adminCheck, listEvents, function(req, res){
         events: res.events
     });
 });
+
+router.post('/events', adminCheck, createEvent, function(req, res){
+    res.redirect('/admin/events')
+});
+
 router.post('/createEvent', createEvent, listEvents, function(req, res){
     res.render('adminList');
 });
