@@ -1,13 +1,18 @@
 $(document).ready(function () {
-  module.polling();
+  module.init();
 });
 
 const module = {
   eventsHTML: '',
   nextEvent: undefined,
   currentEvent: undefined,
+  room: 0,
   url: '',
 
+  init: function() {
+    module.room = document.getElementById('room-input').value;
+    module.polling();
+  },
 
   polling: function(){
     $.get(module.url, function(data) {
@@ -20,7 +25,7 @@ const module = {
   },
 
   fillEvents: function(data) {
-    const events = data[0]['programs'];
+    const events = data[module.room]['programs'];
     events.forEach(module.processEvent);
 
     if (module.currentEvent) {
