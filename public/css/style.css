@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(137.5deg, #25255c, #771215);
+    background: linear-gradient(37.5deg, #e639bf, #3ad4a7);
     font-family: Montserrat,sans-serif;
     color: white;
 }
@@ -9,7 +9,9 @@ body {
 .place-title {
     font-weight: 900;
 }
-
+.logo {
+    max-width: 100%;
+}
 .card {
     background: none;
     border: none;

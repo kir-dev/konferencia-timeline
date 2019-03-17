@@ -4,9 +4,6 @@ const app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
-dal = require('./model/mongo.js');
-
-
 var index = require('./routes/index');
 var admin = require('./routes/admin');
 

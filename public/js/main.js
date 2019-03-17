@@ -7,7 +7,7 @@ const module = {
   nextEvent: undefined,
   currentEvent: undefined,
   room: 0,
-  url: '',
+  url: 'js/api.json',
 
   init: function() {
     module.room = document.getElementById('room-input').value;
@@ -27,7 +27,6 @@ const module = {
   fillEvents: function(data) {
     const events = data[module.room]['programs'];
     events.forEach(module.processEvent);
-
     if (module.currentEvent) {
       const currentEvent = module.currentEvent;
       var currentEventHTML =
